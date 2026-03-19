@@ -2,7 +2,7 @@
 
 A mock telemetry app
 
-## What is this app?
+### What is this app?
 
 An app meant to help me learn as a senior frontend engineer.
 
