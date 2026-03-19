@@ -1,0 +1,90 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.App {
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  color: #e2e8f0;
+}
+
+h1,
+h2 {
+  color: #f8fafc;
+}
+
+.telemetry-summary {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+  color: #e2e8f0;
+}
+
+.graph-section {
+  margin: 1rem auto 1.5rem;
+  width: 840px;
+  border-radius: 10px;
+  background: #0b1220;
+  border: 1px solid #334155;
+  padding: 12px;
+  text-align: left;
+}
+
+.graph-section h2 {
+  margin: 0;
+  font-size: 1rem;
+  color: #f1f5f9;
+}
+
+.telemetry-webgl-canvas,
+.telemetry-graph-canvas {
+  border: 1px solid #334155;
+  margin-top: 0.5rem;
+  width: 100%;
+  height: 280px;
+  border-radius: 6px;
+  background: #0f172a;
+  display: block;
+}
+
+.telemetry-table-wrap {
+  overflow-x: auto;
+  margin: 1rem auto;
+  width: 840px;
+  background: #0b1220;
+  border-radius: 10px;
+  border: 1px solid #334155;
+  padding: 8px;
+}
+
+.telemetry-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 8px 0;
+  color: #e2e8f0;
+  font-size: 0.9rem;
+}
+
+.telemetry-table th,
+.telemetry-table td {
+  border: 1px solid #334155;
+  padding: 0.35rem 0.45rem;
+  text-align: left;
+}
+
+.telemetry-table th {
+  background: #1e293b;
+  color: #f8fafc;
+}
+
+.telemetry-table td {
+  background: #111827;
+}
+
+p {
+  color: #cbd5e1;
+}
