@@ -1,16 +1,7 @@
 import "./App.css";
 import { useEffect, useMemo, useRef } from "react";
 import { useTelemetryRAF } from "./shared/hooks/useTelemetryRAF";
-
-type TelemetryPoint = {
-  timestamp: number;
-  status: string;
-  metrics: {
-    cpu: number;
-    memory: number;
-    latency: number;
-  };
-};
+import type { TelemetryPoint } from "./shared/hooks/useTelemetry";
 
 function createShader(gl: WebGLRenderingContext, type: number, source: string) {
   const shader = gl.createShader(type);

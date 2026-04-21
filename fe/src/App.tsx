@@ -1,16 +1,7 @@
 import "./App.css";
 import { useEffect, useMemo, useRef } from "react";
 import { useTelemetry } from "./shared/hooks/useTelemetry";
-
-type TelemetryPoint = {
-  timestamp: number;
-  status: string;
-  metrics: {
-    cpu: number;
-    memory: number;
-    latency: number;
-  };
-};
+import type { TelemetryPoint } from "./shared/hooks/useTelemetry";
 
 function GraphCanvas({ data }: { data: TelemetryPoint[] }) {
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
@@ -229,7 +220,7 @@ function Summary({ recent }: { recent: TelemetryPoint[] }) {
 
 function App() {
   const data = useTelemetry();
-  const recent = useMemo(() => data.slice(-20), [data]);
+  const recent = useMemo(() => data, [data]);
 
   return (
     <div className="App">
